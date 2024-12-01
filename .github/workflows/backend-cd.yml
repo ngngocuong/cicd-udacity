@@ -56,7 +56,7 @@ jobs:
       
     - name: Build Docker image
       run: |
-        docker build -t my-backend-app:${{ github.sha }} .
+        cd starter/backend && docker build -t my-backend-app:${{ github.sha }} .
       
     - name: set aws credentials
       env:
