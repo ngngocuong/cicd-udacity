@@ -46,7 +46,7 @@ jobs:
     # Step 3: Build image  
     - name: Build Docker image
       env:
-        BACKEND_ENDPOINT: ${{ vars.BACKEND_ENDPOINT }}
+        BACKEND_ENDPOINT: ${{ secrets.BACKEND_ENDPOINT }}
       run: |
         cd starter/frontend && docker build --build-arg=REACT_APP_MOVIE_API_URL=$BACKEND_ENDPOINT -t my-frontend-app:${{ github.sha }} .
       
