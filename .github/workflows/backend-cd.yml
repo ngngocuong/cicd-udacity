@@ -7,11 +7,6 @@ on:
     paths: 
       - starter/backend
 
-env:
-  ECR_REPO_NAME: 611464254945.dkr.ecr.us-east-1.amazonaws.com/backend
-  CONTAINER_TAG: '1.0.1'
-  AWS_REGION: 'us-east-1'
-
 jobs:
   lint:
     runs-on: ubuntu-latest
