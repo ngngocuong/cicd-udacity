@@ -7,7 +7,6 @@ export default function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   const handleMovieClick = (movie) => {
-    console.log('test trigger frontend pipeline');
     setSelectedMovie(movie);
   };
 
