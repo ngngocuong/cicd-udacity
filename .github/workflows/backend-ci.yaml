@@ -1,8 +1,9 @@
 name: backend-ci
+
 on:
   pull_request:
-    branches: [main]
-    paths: [starter/backend]
+    branches: [ "main" ]
+
   workflow_dispatch:
 
 jobs:
