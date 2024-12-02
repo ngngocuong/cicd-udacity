@@ -7,6 +7,9 @@ on:
     paths: 
       - 'starter/backend/**'
 
+env:
+  AWS_REGION: 'us-east-1'
+
 jobs:
   lint:
     runs-on: ubuntu-latest
