@@ -1,8 +1,8 @@
 name: frontend-ci
 on:
   pull_request:
-    branches: [main]
-    paths: [starter/frontend]
+    branches: [ "main" ]
+
   workflow_dispatch:
 
 jobs:
