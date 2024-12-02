@@ -7,7 +7,6 @@ export default function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   const handleMovieClick = (movie) => {
-    console.log('trigger frontend cd');
     setSelectedMovie(movie);
   };
 
