@@ -89,7 +89,7 @@ jobs:
     - name: Update image in Kubernetes manifests
       working-directory: starter/frontend/k8s
       run: |
-        IMAGE_URI=$(aws ecr describe-repositories --repository-names backend --region us-east-1 --query 'repositories[0].repositoryUri' --output text)
+        IMAGE_URI=$(aws ecr describe-repositories --repository-names frontend --region us-east-1 --query 'repositories[0].repositoryUri' --output text)
         kustomize edit set image frontend=$IMAGE_URI:${{ github.sha }}
 
     # Step 10: Deploy to Kubernetes Cluster
