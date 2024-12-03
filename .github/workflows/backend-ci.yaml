@@ -45,5 +45,7 @@ jobs:
       uses: actions/checkout@v3 
     - name: install pipenv tool
       run: pip install pipenv
-    - name: build
-      run: echo "placeholder for docker build"
+    - name: Build Docker image
+      run: |
+        cd starter/backend && docker build -t my-backend-app:${{ github.sha }} .
+        echo "Build image successfully"
